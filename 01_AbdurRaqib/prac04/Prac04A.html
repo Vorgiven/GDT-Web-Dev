@@ -1,0 +1,49 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<style>
+    .holy{
+        border:1px solid black;
+        text-align: center;
+        background-color: rgb(240, 111, 5);
+    }
+    .horizontal{
+        display:flex;
+        justify-content: center;
+    }
+    .horizontal p {
+        border: 1px solid black;
+        flex:1;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: rgb(222, 249, 88);
+        text-align: center;
+        padding: 100px;
+    }
+    #main-content{
+        flex:2;
+        background-color: rgb(91, 249, 88);
+    }
+    #footer{
+        border: 1px solid black;
+        text-align: center;
+        background-color: rgb(249, 88, 88);
+    }
+</style>
+</head>
+<body>
+
+</body>
+    <div class="holy">
+        <p> Holy Grail Layout</p>
+    </div>
+
+    <div class="horizontal">
+        <p> Navigation</p>
+        <p id="main-content"> Main Content</p>
+        <p> Sidebar</p>
+    </div>
+    <div id="footer">
+        <p>footer</p> 
+    </div>
+</html>

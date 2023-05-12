@@ -1,0 +1,118 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<style>
+    body{
+    border: 3px solid black;
+    }
+ body > * {
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+ }
+ .header{
+    background-color: rgb(156, 155, 155);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+.header > *{
+margin: 10px;
+}
+
+ nav{
+    background-color: rgb(71, 222, 243);
+    text-align: center;
+ }
+ .section{
+    display: flex;
+ }
+ .section > * > *{
+    margin: 10px;
+ }
+ .section-1{
+flex:1;
+background-color: rgb(71, 243, 82);
+padding: 20px;
+ }
+ .section-2{
+flex:1;
+background-color: rgb(255, 165, 21);
+padding: 20px;
+display: flex;
+flex-direction:column;
+ }
+ .section-2 .header{
+    flex:1
+ }
+ .section-2 nav{
+    flex:8
+ }
+article{
+    background-color: rgb(253, 110, 100);
+    padding-left:20px;
+    padding-right:20px;
+}
+.section-1 p{
+    background-color: rgb(248, 124, 235);
+    display: inline-block;
+}
+ footer{
+    background-color: rgb(163, 255, 163);
+ }
+ .sec-1-horizontal{
+    display: flex;
+    justify-content: space-between;
+ }
+ .sec-1-horizontal > *{
+    flex:1;
+    text-align: center;
+    padding: 100px;
+ }
+ #aside{
+    background-color: rgb(255, 240, 143);
+ }
+ footer{
+    margin-top: 10px;
+ }
+
+</style>
+</head>
+<body>
+    <p>body</p>
+    <div class="header">
+        header
+        <nav> nav</nav>
+    </div>
+    <div class="section">
+        <div class="section-1">
+            section
+            <div class ="header">
+                header
+            </div>
+          <article>
+            article
+            <div class="header">
+                header
+            </div>
+            <p>p</p>
+            <div class ="sec-1-horizontal">
+                <p>p</p>
+                <p id="aside">aside</p>
+            </div>
+          </article>
+          <footer>footer</footer>
+        </div>
+        <div class="section-2">
+    Section 2
+    <div class="header">
+        header
+    </div>
+    <nav> nav</nav>
+        </div>
+    </div>
+
+<footer>Footer</footer>
+
+</body>
+</html>

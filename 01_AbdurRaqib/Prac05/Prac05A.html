@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prac05A</title>
+        <style>
+        *{border:2px dotted black}
+        .container {
+        display: grid; /* your code here */
+            grid-template-rows: repeat(2,100px)  repeat(2,50px);
+            grid-template-columns: repeat(4,50px);
+        }
+        .item { background-color: #ccc; 
+            /* your code here */
+        }
+        .item1 { background-color: #f00; 
+            /* your code here */
+            grid-area: 1 / 1 /3 / 3;
+        }
+        .item2 { background-color: #0f0; 
+            /* your code here */
+            grid-area: 1 / 3 /2 / 3;
+            margin-left: 10px;
+
+        }
+        .item3 { background-color: #00f; 
+            /* your code here */
+            grid-area: 2 /2/ 2/ 4;
+        }
+        .item4 { background-color: #ff0; 
+            /* your code here */
+            grid-area: 2 / 4 /4 / 6;
+            margin-left: 10px;
+       }
+        .item5 { background-color: #f0f; 
+            /* your code here */
+            grid-area: 3 /2/ 5/ 4;
+            margin-top:10px;
+        }
+        .item6 { background-color: #0ff; 
+            /* your code here */
+            grid-area: 4 /3/ 4/ 6;
+            margin-top:10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+            <div class="item item6">6</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, maximum-
+    scale=20.0">
+    <style>
+            body{
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            background-color: gray;
+            }
+            *{
+            box-sizing: border-box;
+            }
+            .flex{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            }
+            .flex2{
+                display:  flex;
+                flex:2;
+                flex-direction: column;
+            }
+            .col{
+            padding: 1rem 2rem;
+            text-align: center;
+            }
+            .flex > :first-child{
+            flex: 1;
+            background-color: cadetblue;
+            }
+            .flex2 > :first-child{
+            flex: 1;
+            background-color: darkolivegreen;
+            }
+            .flex2 > :last-child{
+            flex: 1;
+            background-color: darkgoldenrod;
+            }
+            .flex > :last-child{
+            flex: 1;
+            background-color: pink;
+            }
+            @media screen and (min-width:1200px) {
+                .flex{
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+            }
+
+            @media screen and (max-width:1024px) {
+                .flex > :last-child{
+                flex-basis: 100%;
+                }
+            }
+
+
+            @media screen and (max-width:769px) {
+            .flex{
+                flex-direction: column-reverse;
+            }
+            }
+
+            
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class ="flex">
+            <div class="col">Column A</div>
+            <div class ="flex2">
+                <div class="col">Column B</div>
+                <div class="col">Column C</div>
+            </div>
+            <div class="col">Column D</div>
+        </div>
+    </div>
+</body>
+</html>

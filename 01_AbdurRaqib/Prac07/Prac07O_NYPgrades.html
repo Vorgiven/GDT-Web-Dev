@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Prac 07D</title>
+
+    </head>
+    <body>
+        <script>
+
+            var moduleName= prompt("Enter module name");
+            var score= prompt("Enter score");
+            var attendance= prompt("Enter attendance");
+            
+            var grade = "";
+
+            if(score>=80)
+                grade = "A";
+            else if(score>=75)
+                grade = "B+";
+            else if(score>=70)
+                grade = "B";
+            else if(score>=65)
+                grade = "C+";
+            else if(score>=60)
+                grade = "C";
+            else if(score>=55)
+                grade = "D+";
+            else if(score>=50)
+                grade = "D";
+            else
+                grade = "F";
+
+            // cap grade if attendance doesn't meet the criteria
+            if(attendance <= 70)
+                grade = "[D] Grade CAP";
+            
+
+            document.write("Module Name: " +moduleName+"<br>");
+            document.write("Score: " +score+"<br>");
+            document.write("Grade: " +grade+"<br>");
+            document.write("Attendance: " +attendance+"%");
+
+
+        </script>
+    </body>
+</html>

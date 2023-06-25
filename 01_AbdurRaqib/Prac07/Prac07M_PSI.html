@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Prac 07D</title>
+
+    </head>
+    <body>
+        <script>
+            var askPSI= prompt("Enter PSI level");
+            var canGoOutside = false;
+            var airQuality = "";
+
+
+            askPSI = parseFloat(askPSI);
+            if(askPSI >= 0 && askPSI <=50){
+                canGoOutside = true;
+                airQuality = "Good";
+            }
+            else if(askPSI >= 51 && askPSI <=100){
+                canGoOutside = true;
+                airQuality = "Moderate";
+            }
+            else if(askPSI >= 101 && askPSI <=200){
+                canGoOutside = false;
+                airQuality = "Unhealthy";
+            }
+            else if(askPSI >= 201 && askPSI <=300){
+                canGoOutside = false;
+                airQuality = "VERY Unhealthy";
+            }
+            else if(askPSI >= 300){
+                canGoOutside = false;
+                airQuality = "Hazardous";
+            }
+
+            var canGoOutsideText = ""
+
+            if(canGoOutside)
+                canGoOutsideText = "You can go outdoor excercise";
+            else
+                canGoOutsideText = "Please stay indoors";
+
+            document.write("PSI is "+askPSI +", Air Quality is "+airQuality+". "+canGoOutsideText);
+
+
+        </script>
+    </body>
+</html>

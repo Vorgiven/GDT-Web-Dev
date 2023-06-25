@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Prac 07D</title>
+
+    </head>
+    <body>
+        <script>
+            var height= prompt("Enter Height(m)");
+            var weight= prompt("Enter Weight(kg)");
+            height = parseFloat(height);
+            weight = parseFloat(weight);
+
+            var bmi = weight / (height * height);
+            bmi = bmi.toFixed(2);
+            var risk;
+            var recomendations;
+
+            if(bmi>=27.5){
+                risk = "HIGH Risk";
+                recomendations = "Must excercise more and watch your diet!"
+            }
+            else if(bmi>=23){
+                risk = "MODERATE Risk";
+                recomendations = "excercise more!"
+            }
+            else if(bmi>=18.5){
+                risk = "LOW Risk";
+                recomendations = "You are Healthy!"
+            }
+            else if (bmi >=0){
+                risk = "Risk of nutritional deficiency, diseases and osteoporosis";
+                recomendations = "Please build up your diet!"
+            }
+
+
+            document.write("Height: " +weight+"m<br>");
+            document.write("Weight: " +weight+"kg<br>");
+            document.write("BMI: " +bmi+"<br>");
+            document.write("Risk: " +risk+"<br>");
+            document.write("Recomendations: " +recomendations);
+
+
+        </script>
+    </body>
+</html>
